@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colspan, rowspan, empty cell</title>
+</head>
+<body>
+    <h1>Penggunaan colspan, rowspan, dan empty cell</h1>
+
+    <h3>sel yang mencakup 2 kolom</h3>
+    <table border="1">
+        <tr>
+            <th>Nama</th>
+            <th colspan="2">Telepon</th>
+        </tr>
+        <tr>
+            <td>Dwara Yoga Pradana</td>
+            <td>081231756399</td>
+            <td>081234567890</td>
+        </tr>
+    </table>
+
+    <h3>sel yang mencakup 2 baris</h3>
+    <table border="1">
+        <tr>
+            <th>Nama</th>
+            <td>Dwara Yoga Pradana</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telepon</th>
+            <td>081231756399</td>
+        </tr>
+        <tr>
+            <td>081234567890</td>
+        </tr>
+    </table>
+
+    <h3>Empty cell</h3>
+    <table border="1">
+        <tr>
+            <td>isi kolom 1</td>
+            <td>isi kolom 2</td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</body>
+</html>

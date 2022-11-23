@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Operator Javascript</title>
+</head>
+<body>
+    
+    <button id="contoh1" onclick="b1()">Contoh 1</button>
+    <button id="contoh2" onclick="b2()">Contoh 2</button>
+    <button id="contoh3" onclick="b3()">Contoh 3</button>
+    <button id="contoh4" onclick="b4()">Contoh 4</button>
+    <button id="contoh5" onclick="b5()">Contoh 5</button>
+
+    <br><br>
+
+    <form action="">
+        <p>Contoh 6</p>
+        <input type="button" name="test" value="Click" onclick="inform()">
+    </form>
+
+    <br>
+
+    <p>Contoh 7</p>
+    <form action="">
+        <input type="radio" name="C1" onclick="document.bgColor='lightblue'">
+        <input type="radio" name="C2" onclick="document.bgColor='lightyellow'">
+        <input type="radio" name="C3" onclick="document.bgColor='lightgreen'">
+    </form>
+
+    <br>
+
+    <p>Contoh 8</p>
+    <script>
+        var message = "Welcome to my site"
+        document.write(message.toUpperCase().bold())
+    </script>
+
+    <br>
+
+    <p>Contoh 9: Validasi Email</p>
+    <form action="" name="test" onsubmit="checkmail(this.test2.value); return false">
+        <input type="text" size="20" name="test2">
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function checkmail(email) {
+            if (email.indexOf("@") != 1 && email.indexOf(".") != 1) {
+                alert("Apakah Alamat Email Sudah Benar?")
+            } else {
+                alert("Penulisan Email Salah!")
+            }
+        }
+    </script>
+
+    <br>
+
+    <p>Contoh 10: Membuka Window di Javascript</p>
+    <script>
+        function bukaWindow() {
+            window.open("http://www.google.com", "google", "width=400, height=300, toolbar=1")
+        }
+    </script>
+    <input type="button" onclick="bukaWindow()" value="Open">
+
+    <br>
+
+    <p>Contoh 11: Alert, Confirm, and Prompt</p>
+    <script>
+        var x= window.confirm("Are You Sure?")
+        if (x) {
+            window.alert("Go to next Job")
+        } else {
+            window.alert("Repeat again until you can solve it")
+        }
+
+        var y = window.prompt("Masukkan nama Anda")
+        window.alert("Welcome " + y)
+    </script>
+
+</body>
+</html>

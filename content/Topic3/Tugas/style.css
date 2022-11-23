@@ -1,0 +1,134 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    background-color: royalblue;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+nav ul {
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.konten {
+    margin: 5px 100px 5px 100px;
+    padding: 10px;
+
+}
+
+.indent p {
+    text-indent: 50px;
+}
+
+.alignment #p1{
+    text-align: left;
+}
+
+.alignment #p2{
+    text-align: center;
+}
+
+.alignment #p3{
+    text-align: right;
+}
+
+.alignment #p4{
+    text-align: justify;
+}
+
+.transform #heading1 {
+    text-transform: lowercase;
+}
+
+.transform #heading2 {
+    text-transform: uppercase;
+}
+
+.transform #heading3 {
+    text-transform: capitalize;
+}
+
+
+.artikel {
+    padding: 100px;
+    margin: 100px;
+    box-sizing: border-box;
+    box-shadow: 3px 2px 3px 0px;
+}
+
+.judul {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.penyusun {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nama {
+    font-size: 10px;
+    text-align: center;
+}
+
+.nama ul{
+    list-style: none;
+}
+
+.abstrak {
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.isi p {
+    font-size: 11px;
+    text-indent: 20px;
+    text-align: justify;
+    line-break: auto;
+}
+
+table, td, th{
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+footer {
+    background-color: royalblue;
+    color: white;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: static;
+    margin: auto;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+    <style>
+        body {
+            background-color: aliceblue;
+            margin: 0;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: rgb(100, 141, 177);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+        }
+
+        .isi {
+            padding: 20px;
+        }
+
+        #progressBar {
+            width: 50%;
+            background-color: gray;
+            border: 1px black;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        #progress {
+            width: 1%;
+            height: 30px;
+            background-color: green;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: rgb(100, 141, 177);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            height: auto;
+        }
+    </style>
+<body>
+    <nav>
+        <h2>JAVASCRIPT</h2>
+    </nav>
+
+    <div class="isi">
+        <h2>Alert</h2>
+        <button onclick="alert('Selamat Datang')">Klik Disini</button>
+        
+        <br>
+
+        <h2>Counter</h2>
+        <button id="count" onclick="counter()">Count</button>
+        <button id="reset" onclick="reset()">Reset</button>
+        
+        <p id="hasil-count">0</p>
+        <script>       
+            var count = 0; 
+            
+            var reset = function() {
+                document.getElementById('hasil-count').innerHTML = 0;
+                return count = 0;
+            }
+
+            var counter = function() {    
+                count += 1;
+                document.getElementById('hasil-count').innerHTML = count;
+                    
+            }
+        </script>
+
+        <br>
+
+        <h2>Luas Balok</h2>
+
+        <table>
+            <tr>
+                <td>Masukkan Panjang</td>
+                <td><input type="text" id="panjang-balok"></td>
+            </tr>
+            <tr>
+                <td>Masukkan Lebar</td>
+                <td><input type="text" id="lebar-balok"></td>
+            </tr>
+            <tr>
+                <td>Masukkan Tinggi</td>
+                <td><input type="text" id="tinggi-balok"></td>
+            </tr>
+        </table>
+        <button id="balok" onclick="hitungKubus()">Hitung Luas Kubus</button>
+
+        <p id="hasil-balok"></p>
+        <script>
+            function hitungKubus() {
+                var p = document.getElementById('panjang-balok').value;
+                var l = document.getElementById('lebar-balok').value;
+                var t = document.getElementById('tinggi-balok').value;
+
+                hasil = p * l * t;
+
+                document.getElementById('hasil-balok').innerHTML = hasil
+            }
+        </script>
+
+        <br>
+
+        <h2>Animasi</h2>
+        <button id="loading" onclick="animasi()">Klik Disini</button>
+        <br>
+        <div id="progressBar">
+            <div id="progress"></div>
+        </div>
+        <script>
+            var i = 0;
+            function animasi() {
+                if (i == 0) {
+                    i = 1;
+                    var elem = document.getElementById("progress");
+                    var width = 1;
+                    var id = setInterval(frame, 40);
+                    function frame() {
+                        if (width >= 100) {
+                            clearInterval(id);
+                            i = 0;
+                        } else {
+                            width++;
+                            elem.style.width = width + "%";
+                        }
+                    }
+                }
+            }
+        </script>
+    </div>
+
+    <footer>
+        <h3>&copy; Dwara Yoga Pradana</h3>
+    </footer>
+    
+
+
+</body>
+</html>

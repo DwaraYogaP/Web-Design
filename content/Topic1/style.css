@@ -1,0 +1,16 @@
+p {
+    color: #FFFFFF;
+    font-family: arial;
+    font-weight: bold;
+} 
+
+p.group {
+    color: #008080; /* membuat warna text putih */
+    font-family: arial;
+    background: #FFFFFF; /* membuat background putih */
+}
+
+p#one {
+    color: #F08080;
+    font-family: "times new roman";
+}

@@ -1,0 +1,187 @@
+#art-main {
+    background: #FCFCFC scroll;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    cursor: default;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #303890;
+}
+
+h2 {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFAF00;
+}
+
+h3 {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.art-nav {
+    background: #E0E0E0;
+    width: 100%;
+
+    padding: 6px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+    font-size: 0;
+    box-shadow: 0 5px 7px -5px #222;
+}
+
+.topmenu {
+    height: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.topmenu p {
+    position: relative;
+    width: 400px;
+    margin-left: 10px;
+    margin-top: 8px;
+    line-height: 8px;
+    font-size: 11px;
+    color: #5A6A6A;
+}
+
+.topmenu a {
+    color: #5A6A6A;
+    text-decoration: none;
+}
+
+.topmenu a:hover {
+    text-decoration: underline;
+}
+
+.topmenu span {
+    margin-left: 20px;
+}
+
+.art-header {
+    height: 120px;
+    width: 75%;
+    margin: 5px auto 0;
+    padding: 2px;
+}
+
+.menumid{
+    height: 38px;
+    background: #22275A;
+    background: -moz-linear-gradient(top, #22275A 0%, #94AED4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #22275A), color-stop(100%, #94AED4));
+    background: -webkit-linear-gradient(top, #22275A 0%, #94AED4 100%);
+    background: -o-linear-gradient(top, #22275A 0%, #94AED4 100%);
+    background: linear-gradient(top, #22275A 0%, #94AED4 100%);
+    width: auto;
+    margin-left: 12%;
+    margin-right: 12%;
+    box-shadow: 0 5px 5px -5px #333;
+    vertical-align: middle;
+}
+
+.menumid ul {
+    list-style: none;
+}
+
+.menumid > ul {
+    float: left;
+}
+
+.menumid > ul > li {
+    float: left;
+}
+
+.menumid > ul > li > a {
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 12px;
+    margin: 5px 30px 0 5px;
+}
+
+.menumid > ul > li:hover > a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.art-sheet {
+    background: #FCFCFC;
+    border-radius: 0px;
+    padding: 5px 0 0 10px;
+    margin: 5px auto 0;
+    position: relative;
+    cursor: auto;
+    width: 75%;
+    line-height: 175%;
+    z-index: auto !important;
+}
+
+.art-sheet p {
+    position: relative;
+    cursor: auto;
+    width: 75%;
+    line-height: 175%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.artsheet a {
+    line-height: 175%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #6A6A6A;
+}
+
+.art-sheet a:hover {
+    color: #FFA500;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+.art-footer {
+    background:#94AED4;
+    margin: 40px auto 0;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: 75%;
+    height: 100px;
+    border-radius: 0px;
+    box-shadow: 0 -7px 7px -7px;
+    padding: 20px 0 10px 10px;
+}
+
+.art-footer a, .art-footer a:link, .art-footer a:visited, .art-footer a:hover {
+    color: #FFF;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+}
+
+.art-footer a:hover {
+    color: #FFA500;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+.art-footer p {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}

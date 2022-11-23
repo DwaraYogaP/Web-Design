@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* color : #DFF6FF, #47B5FF, #256D85, #06283D */
+
+* {
+    margin: 0;
+    
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+#jumbotron {
+    
+    min-height: 100vh;
+    background-color: #06283D;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    padding: 20px;
+    text-align: right;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#nav-button {
+    background-color: #256D85;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #256D85;
+    outline: none;
+    border-radius: 10px;
+    transition: .5 ease;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #041e2f;
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5 ease;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+#jumbotron-content {
+    padding: 30px;
+}
+
+#jumbotron-content table {
+    padding: 60px;
+    margin-right: 40px;
+    margin-top: 70px;
+}
+
+#jumbotron-content table button {
+   background-color: red;
+   color: white;
+   border: 0px;
+   border-radius: 2px;
+   width: 170px;
+   height: 80px;
+   font-size: larger;
+}
+
+#jumbotron-content a {
+    color: white;
+}
+
+#jumbotron-content table button:hover {
+    background-color: rgb(164, 11, 11);
+    color: white;
+}
+
+.jumbotron-box {
+    display: flex;
+    flex-direction: row; 
+    border-radius: 1px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron-box > div {
+    width: 80px;
+    height: 80px;
+    display: block;
+    background-color: #205263;
+    margin: 10px;
+}
+
+.isi {
+    padding: 40px;
+    background-color: #256D85;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: row; 
+    height: auto;
+    border-radius: 1px;
+    margin: 10px;
+    
+}
+
+.box-content > div {
+    width: 200px;
+    height: fit-content;
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    background-color: #205263;
+    text-align: left;
+}
+
+.box-content button {
+    background-color: red;
+    color: white;
+    border: 0px;
+    border-radius: 2px;
+    width: 100px;
+    height: 40px;
+    font-size: larger;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(164, 11, 11);
+    color: white;
+}
+
+.blue {
+    background-color: #06283D;
+    padding: 40px;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: row; 
+    height: auto;
+    border-radius: 1px;
+    margin: 10px;
+}
+
+.project-content > div {
+    width: 400px;
+    height: fit-content;
+    display: block;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-content h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#project img {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+#project img:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+#about table tr td {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.hitung_btn {
+    background-color: azure;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    height: 25px;
+    width: 80%;
+}
+.hitung_btn:hover {
+    border: none;
+}
+
+
+.contact-content {
+    text-align: left;
+}
+
+.box-contact-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-contact-content > div {
+    width: 100%;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.contact-table tr td {
+    padding: 4px;
+}
+
+#list {
+    list-style-type: none;
+}
+
+#list a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+#list a:hover {
+    text-decoration: underline;
+}
+
+#sosmed tr td {
+    padding: 10px;
+}
+
+footer {
+    background-color: #041e2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.ubah-body {
+    color: black;
+}
+
+.ubah-jumbotron {
+    background-color: #30475E;
+    color: black;
+}
+
+.ubah-isi {
+    background-color: white;
+}
